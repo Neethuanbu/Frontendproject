@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script type="text/javascript">
+        function validate() {
+            var username = document.getElementById("uname");
+            var password = document.getElementById("password");
+            if (username.value.trim() == "" || password.value.trim() == "") {
+                alert("no blank value allowed");
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="LOGIN">
+        <center>
+            <h1> LOGIN PAGE</h1>
+            <style>
+                body {
+                    background-image: url('https://thumbs.dreamstime.com/b/login-illustration-letter-cubes-forming-word-36025252.jpg');
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    background-size: 100% 100%;
+                }
+            </style>
+            <form onsubmit=" return validate()" action="message.html">
+
+
+
+                <input id="uname" placeholder="USERNAME" type="text" required/><br><br><br>
+                <input type="password" placeholder="PASSWORD" type="password" required/><br> <br><br>
+                <button type=" submit" action="Registeration1.html"> SUBMIT</button>
+
+            </form>
+
+</body>
+
+</html>

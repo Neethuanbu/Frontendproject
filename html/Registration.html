@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+
+    <div class="background-image">
+        <style>
+            body {
+                background-image: url('https://static1.smartbear.co/smartbear/media/blog/wp/job-application-platform.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+                background-color: aqua;
+            }
+        </style>
+    </div>
+    <form method="GET">
+        <h2> <u> STUDENT REGISTRATION FORM</u></h2><br><br><br>
+        <div>
+            <table>
+                <tr>
+                    <td> FIRST NAME: </td>
+                    <td> <input type="text" name="fname" placeholder="enter your firstname"> </td>
+                </tr>
+                <tr>
+                    <td> LAST NAME:</td>
+                    <td> <input type="text" name="lname" placeholder="enter your lastname">
+                </tr>
+                <tr>
+                    <td> DATE OF BIRTH:</td>
+                    <td> <input type="date" name="date" placeholder="Select"></td>
+                </tr>
+                <tr>
+                    <td>EMAIL ID:</td>
+                    <td> <input type="email" name="EMAIL_ID" placeholder=" enter your mail id"></td>
+                </tr>
+                <tr>
+
+
+                    <td> MOBILE NUMBER:</td>
+                    <td> <input type="text" name="phone_no" placeholder="enter 10 digit number"></td>
+
+
+                </tr>
+                <tr>
+                    <td> GENDER:</td>
+                    <td> <input type="radio" name="gender" value="male"> MALE
+                        <input type="radio" name="gender" value="female"> FEMALE
+                    </td>
+                </tr>
+                <tr>
+                    <td> ADDRESS:</td>
+                    <td><input type="text" name=" door no,street,landmark"> </td>
+                </tr>
+                <tr>
+                    <td>CITY: </td>
+                    <td> <input type=" text" name="city"></td>
+                </tr>
+                <tr>
+                    <td> PIN CODE:</td>
+                    <td> <input type="text" name="pincode"></td>
+                </tr>
+                <tr>
+                    <td>STATE: </td>
+                    <td><input type="text" name=" state"></td>
+                </tr>
+                <tr>
+                    <td>COUNTRY: </td>
+                    <td> <input type="text" name="country"></td>
+                </tr>
+                <tr>
+                    <td> QUALIFICATION: </td>
+                    <td> <input type=" text" name="degree"></td>
+                </tr>
+                <tr>
+                    <td>JOB APPLYING FOR: </td>
+                    <td> <input type=" text" name="designation"></td>
+                </tr>
+            </table>
+            <br><br>
+            <br>
+            <script type="text/javascript">
+                function msg() {
+                    alert("Register Successful");
+                    var phoneNum = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+                    if (phone.value.match(phoneNum)) {
+                        return true;
+                    } else {
+                        document.getElementById("phone").className = document.getElementById("phone").className + " error";
+                        return false;
+                    }
+                }
+            </script>
+            <input type="Mobile number" name="Mobile number" placeholder="enter yor number" onblur=msg()>
+
+            <button type="button">Submit</button>
+
+
+        </div>
+
+    </form>
+
+</body>
+
+</html>
